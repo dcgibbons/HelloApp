@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C2627762160E986B00C71555 /* libHelloFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C262775D160E985B00C71555 /* libHelloFramework.a */; };
+		C2627765160E987600C71555 /* libHelloFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C262775D160E985B00C71555 /* libHelloFramework.a */; };
 		C2E3141E160B649A009FC48E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2E3141D160B649A009FC48E /* UIKit.framework */; };
 		C2E31420160B649A009FC48E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2E3141F160B649A009FC48E /* Foundation.framework */; };
 		C2E31422160B649A009FC48E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2E31421160B649A009FC48E /* CoreGraphics.framework */; };
@@ -24,6 +26,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		C262775C160E985B00C71555 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2627754160E985A00C71555 /* HelloFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C2E313E1160B5F13009FC48E;
+			remoteInfo = HelloFramework;
+		};
+		C262775E160E985B00C71555 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2627754160E985A00C71555 /* HelloFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C2E313F2160B5F13009FC48E;
+			remoteInfo = HelloFrameworkTests;
+		};
+		C2627760160E986700C71555 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2627754160E985A00C71555 /* HelloFramework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C2E313E0160B5F12009FC48E;
+			remoteInfo = HelloFramework;
+		};
+		C2627763160E987200C71555 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2627754160E985A00C71555 /* HelloFramework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C2E313E0160B5F12009FC48E;
+			remoteInfo = HelloFramework;
+		};
 		C2E3143F160B649B009FC48E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C2E31410160B649A009FC48E /* Project object */;
@@ -34,6 +64,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C2627754160E985A00C71555 /* HelloFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HelloFramework.xcodeproj; path = deps/HelloFramework/HelloFramework.xcodeproj; sourceTree = "<group>"; };
 		C2E31419160B649A009FC48E /* HelloApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E3141D160B649A009FC48E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C2E3141F160B649A009FC48E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -60,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2627765160E987600C71555 /* libHelloFramework.a in Frameworks */,
 				C2E3141E160B649A009FC48E /* UIKit.framework in Frameworks */,
 				C2E31420160B649A009FC48E /* Foundation.framework in Frameworks */,
 				C2E31422160B649A009FC48E /* CoreGraphics.framework in Frameworks */,
@@ -70,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2627762160E986B00C71555 /* libHelloFramework.a in Frameworks */,
 				C2E3143C160B649B009FC48E /* SenTestingKit.framework in Frameworks */,
 				C2E3143D160B649B009FC48E /* UIKit.framework in Frameworks */,
 				C2E3143E160B649B009FC48E /* Foundation.framework in Frameworks */,
@@ -79,9 +112,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C2627755160E985A00C71555 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C262775D160E985B00C71555 /* libHelloFramework.a */,
+				C262775F160E985B00C71555 /* HelloFrameworkTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		C2E3140E160B649A009FC48E = {
 			isa = PBXGroup;
 			children = (
+				C2627754160E985A00C71555 /* HelloFramework.xcodeproj */,
 				C2E31423160B649A009FC48E /* HelloApp */,
 				C2E31441160B649B009FC48E /* HelloAppTests */,
 				C2E3141C160B649A009FC48E /* Frameworks */,
@@ -166,6 +209,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				C2627764160E987200C71555 /* PBXTargetDependency */,
 			);
 			name = HelloApp;
 			productName = HelloApp;
@@ -184,6 +228,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				C2627761160E986700C71555 /* PBXTargetDependency */,
 				C2E31440160B649B009FC48E /* PBXTargetDependency */,
 			);
 			name = HelloAppTests;
@@ -210,6 +255,12 @@
 			mainGroup = C2E3140E160B649A009FC48E;
 			productRefGroup = C2E3141A160B649A009FC48E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C2627755160E985A00C71555 /* Products */;
+					ProjectRef = C2627754160E985A00C71555 /* HelloFramework.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C2E31418160B649A009FC48E /* HelloApp */,
@@ -217,6 +268,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C262775D160E985B00C71555 /* libHelloFramework.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libHelloFramework.a;
+			remoteRef = C262775C160E985B00C71555 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C262775F160E985B00C71555 /* HelloFrameworkTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = HelloFrameworkTests.octest;
+			remoteRef = C262775E160E985B00C71555 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C2E31417160B649A009FC48E /* Resources */ = {
@@ -277,6 +345,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		C2627761160E986700C71555 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HelloFramework;
+			targetProxy = C2627760160E986700C71555 /* PBXContainerItemProxy */;
+		};
+		C2627764160E987200C71555 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HelloFramework;
+			targetProxy = C2627763160E987200C71555 /* PBXContainerItemProxy */;
+		};
 		C2E31440160B649B009FC48E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C2E31418160B649A009FC48E /* HelloApp */;
@@ -430,6 +508,7 @@
 				C2E3144E160B649B009FC48E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C2E3144F160B649B009FC48E /* Build configuration list for PBXNativeTarget "HelloAppTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +517,7 @@
 				C2E31451160B649B009FC48E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
