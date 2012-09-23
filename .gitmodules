@@ -1,0 +1,3 @@
+[submodule "deps/HelloFramework"]
+	path = deps/HelloFramework
+	url = git@github.com:dcgibbons/HelloFramework.git
